@@ -26,11 +26,12 @@
   ],
   "scripts": {
     "build": "tsc && tsc-alias",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepare": "tsc && tsc-alias"
   },
   "prettier": "@vuebro/configs/prettierrc",
   "dependencies": {
-    "@vuebro/flat-json-tree": "^2.1.27",
+    "@vuebro/flat-json-tree": "jbruwes/flat-json-tree",
     "ajv": "^8.17.1",
     "ajv-keywords": "^5.1.0",
     "consola": "^3.4.2",
@@ -41,7 +42,7 @@
   },
   "devDependencies": {
     "@types/node": "^24.10.0",
-    "@vuebro/configs": "^1.1.59",
+    "@vuebro/configs": "jbruwes/configs",
     "eslint": "^9.39.1",
     "vite-plugin-static-copy": "^3.1.4"
   }
